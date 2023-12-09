@@ -1,5 +1,5 @@
 # Use the base image
-FROM fredblgr/ubuntu-novnc:20.04
+FROM moyash/novnc-ros-desktop:melodic
  
 # Expose the port on which NoVNC runs (80 inside the container)
 EXPOSE 80
