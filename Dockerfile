@@ -1,11 +1,10 @@
 # 使用 Ubuntu 22.04 作为基础镜像
-FROM ubuntu:18.04
+FROM ubuntu:latest
 
 # 安装 Shellinabox
 RUN apt-get update && \
     apt-get install -y shellinabox && \
     apt-get clean && \
-    apt-get install -y neofetch  \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # 设置 root 用户的密码为 'root'
